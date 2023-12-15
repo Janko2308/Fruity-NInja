@@ -68,7 +68,8 @@ public class SliceObject : MonoBehaviour
         collider.convex = true;
         rb.AddExplosionForce(cutForce, slicedObject.transform.position, 1);
         slicedObject.layer = LayerMask.NameToLayer("sliceableLayer");
-         slicedObject.AddComponent<XRGrabInteractable>();
+        slicedObject.AddComponent<XRGrabInteractable>();
+        slicedObject.AddComponent<DestroyIfBelowY>();
         
     }
 }

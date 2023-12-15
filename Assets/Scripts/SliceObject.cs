@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using EzySlice;
 using UnityEngine.InputSystem;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class SliceObject : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class SliceObject : MonoBehaviour
     public LayerMask sliceableLayer;
     public Material crossSectionMaterial;
     public float cutForce = 2000;
+    private XRGrabInteractable grabInteractable; 
     // Start is called before the first frame update
     void Start()
     {
@@ -66,5 +68,7 @@ public class SliceObject : MonoBehaviour
         collider.convex = true;
         rb.AddExplosionForce(cutForce, slicedObject.transform.position, 1);
         slicedObject.layer = LayerMask.NameToLayer("sliceableLayer");
+         slicedObject.AddComponent<XRGrabInteractable>();
+        
     }
 }

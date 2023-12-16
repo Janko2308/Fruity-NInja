@@ -262,7 +262,7 @@ PrefabInstance:
     - target: {fileID: 6598815579406187037, guid: 18ddb545287c546e19cc77dc9fbb2189,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
@@ -1219,9 +1219,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 2006746656}
   fruits:
-  - {fileID: 7676928824118621394, guid: aa0cf05bb6698a440899f021e0637630, type: 3}
-  - {fileID: 7676928824118621394, guid: 043eee74b4060ce4db1616fbe8ffd089, type: 3}
-  - {fileID: 7676928824118621394, guid: 619d6cd47b37f3846a669e9e4c5becd3, type: 3}
+  - {fileID: 3451360241762871633, guid: e455950039c614d46a3a0f94355b4762, type: 3}
+  - {fileID: 2776474626661073279, guid: 7772cbffdaf91584dab732fbff7f4aa0, type: 3}
+  - {fileID: 9152073641914881136, guid: e7986629a0fd6e54f8f5c813b0764a0b, type: 3}
+  - {fileID: 7191382344483336146, guid: 3fc897c755e2ae243b9416d6960f96f8, type: 3}
+  - {fileID: 1537881004332490164, guid: 18733921ca09e334790d4fb0f26f3124, type: 3}
+  - {fileID: 7711825394073895313, guid: 352c046729eac734887e9a6070b54f4c, type: 3}
   spawn: 1
   xMin: -5
   xMax: 5

@@ -42,11 +42,11 @@ public class SliceObject : MonoBehaviour
 
         if (hull != null)
         {
-            //GameObject lowerHull = hull.CreateLowerHull(target, crossSectionMaterial);
-            GameObject lowerHull = hull.CreateLowerHull(target, target.GetComponent<MeshRenderer>().material);
+            GameObject lowerHull = hull.CreateLowerHull(target, crossSectionMaterial);
+            //GameObject lowerHull = hull.CreateLowerHull(target, target.GetComponent<MeshRenderer>().material);
             SetupSlicedComponent(lowerHull);
-            //GameObject upperHull = hull.CreateUpperHull(target, crossSectionMaterial);
-            GameObject upperHull = hull.CreateUpperHull(target, target.GetComponent<MeshRenderer>().material);
+            GameObject upperHull = hull.CreateUpperHull(target, crossSectionMaterial);
+            //GameObject upperHull = hull.CreateUpperHull(target, target.GetComponent<MeshRenderer>().material);
             SetupSlicedComponent(upperHull);
 
             Destroy(target);
